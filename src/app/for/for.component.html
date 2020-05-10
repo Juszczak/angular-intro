@@ -1,0 +1,14 @@
+<h2>NgFor</h2>
+
+<div class="items">
+  <div
+    *ngFor="let item of items; even as even; first as first; last as last"
+    class="item"
+    [class.even]="even"
+    [class.first]="first"
+    [class.last]="last"
+    (click)="select(item)"
+  >
+    this is item with value {{ item }}
+  </div>
+</div>

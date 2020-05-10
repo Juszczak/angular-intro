@@ -1,1 +1,13 @@
 <router-outlet></router-outlet>
+
+<h1>{{ title }}</h1>
+
+<p>{{ x }} + {{ y }} = {{ x + y }}.</p>
+
+<app-if [visible]="true"></app-if>
+
+<app-for (selected)="setColor($event)"></app-for>
+
+<div class="selected">selected color: {{ color }}</div>
+
+<app-switch></app-switch>

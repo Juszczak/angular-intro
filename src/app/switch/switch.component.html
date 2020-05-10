@@ -1,0 +1,18 @@
+<h2>NgSwitch</h2>
+
+<button (click)="count($event)">click</button>
+
+<div [ngSwitch]="clicks">
+  <div *ngSwitchCase="0" class="zero">
+    not even a single click
+  </div>
+  <div *ngSwitchCase="1" class="single">
+    you have clicked once
+  </div>
+  <div *ngSwitchCase="2" class="double">
+    you have clicked twice
+  </div>
+  <div *ngSwitchDefault class="more">
+    you have clicked {{ clicks }} times
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.items {
+  .item {
+    &.even {
+      background-color: #ff0;
+    }
+
+    &.first {
+      background-color: #0ff;
+    }
+
+    &.last {
+      background-color: #f0f;
+    }
+  }
+}
